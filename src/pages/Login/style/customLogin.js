@@ -9,7 +9,7 @@ export const LoginContent = styled.section`
 
   background-color: #fff;
   height: 100%;
-  width: 50%;
+  width: 40%;
 
   font-size: 14px;
   font-weight: bold;
@@ -24,7 +24,7 @@ export const BackContent = styled.section`
   align-content: center;
 
   height: 100%;
-  width: 50%;
+  width: 60%;
 
   background-image: linear-gradient(
     to bottom right,
