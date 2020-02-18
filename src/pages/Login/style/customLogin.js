@@ -9,11 +9,7 @@ export const LoginContent = styled.section`
 
   background-color: #fff;
   height: 100%;
-  width: 40%;
-
-  font-size: 14px;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  width: 35%;
 `;
 
 export const BackContent = styled.section`
@@ -21,10 +17,10 @@ export const BackContent = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-content: center;
+  align-content: flex-start;
 
   height: 100%;
-  width: 60%;
+  width: 65%;
 
   background-image: linear-gradient(
     to bottom right,
@@ -35,4 +31,28 @@ export const BackContent = styled.section`
     #ff1443
   );
   color: #fff;
+`;
+
+export const Title = styled.span`
+  font-size: 26px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+
+  color: #ff1443;
+  margin-bottom: 20px;
+`;
+
+export const Salutation = styled.span`
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+`;
+
+export const InfoLogin = styled.span`
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+
+  text-align: left;
 `;

@@ -3,18 +3,22 @@ import React from "react";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import IconButton from "@material-ui/core/IconButton";
-import Input from "@material-ui/core/Input";
-import FilledInput from "@material-ui/core/FilledInput";
 import OutlinedInput from "@material-ui/core/OutlinedInput";
 import InputLabel from "@material-ui/core/InputLabel";
 import InputAdornment from "@material-ui/core/InputAdornment";
-import FormHelperText from "@material-ui/core/FormHelperText";
 import FormControl from "@material-ui/core/FormControl";
 import TextField from "@material-ui/core/TextField";
 import Visibility from "@material-ui/icons/Visibility";
 import VisibilityOff from "@material-ui/icons/VisibilityOff";
+import { Button } from "@material-ui/core";
 
-import { LoginContent, BackContent } from "./style/customLogin";
+import {
+  LoginContent,
+  BackContent,
+  Title,
+  Salutation,
+  InfoLogin
+} from "./style/customLogin";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -25,7 +29,7 @@ const useStyles = makeStyles(theme => ({
     margin: theme.spacing(1)
   },
   withoutLabel: {
-    marginTop: theme.spacing(3)
+    marginTop: theme.spacing(2)
   },
   textField: {
     width: 280
@@ -35,6 +39,7 @@ const useStyles = makeStyles(theme => ({
 function Login() {
   const classes = useStyles();
   const [values, setValues] = React.useState({
+    email: "",
     password: "",
     showPassword: false
   });
@@ -54,24 +59,32 @@ function Login() {
   return (
     <>
       <LoginContent className={classes.root}>
-        <span>Log in</span>
+        <Title>Login</Title>
 
         <FormControl
           className={clsx(classes.margin, classes.textField)}
           variant="outlined"
         >
-          <TextField label="Email" variant="outlined" />
+          <TextField
+            label="Email"
+            color="secondary"
+            variant="outlined"
+            onChange={e => {
+              setValues({ ...values, email: e.target.value });
+            }}
+          />
         </FormControl>
 
         <FormControl
           className={clsx(classes.margin, classes.textField)}
           variant="outlined"
         >
-          <InputLabel htmlFor="outlined-adornment-password">
+          <InputLabel htmlFor="outlined-adornment-password" color="secondary">
             Password
           </InputLabel>
           <OutlinedInput
             id="outlined-adornment-password"
+            color="secondary"
             type={values.showPassword ? "text" : "password"}
             value={values.password}
             onChange={handleChange("password")}
@@ -90,10 +103,23 @@ function Login() {
             labelWidth={70}
           />
         </FormControl>
+        <Button
+          size="large"
+          className={clsx(classes.withoutLabel, classes.textField)}
+          variant="contained"
+          color="secondary"
+        >
+          Login
+        </Button>
       </LoginContent>
 
       <BackContent>
-        <span>INTRODUCTION</span>
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <Salutation>Hello, Sapinho!</Salutation>
+          <InfoLogin>nasbndnahsasjbdndhjabsdhbavsd</InfoLogin>
+          <InfoLogin>sbahdjbhasbdhasbdgbajisbdhbsabn</InfoLogin>
+          <InfoLogin>asbdhjbashbashdbsadansdjndsabdh</InfoLogin>
+        </div>
       </BackContent>
     </>
   );
