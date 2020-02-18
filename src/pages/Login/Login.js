@@ -114,11 +114,18 @@ function Login() {
       </LoginContent>
 
       <BackContent>
-        <div style={{ display: "flex", flexDirection: "column" }}>
-          <Salutation>Hello, Sapinho!</Salutation>
-          <InfoLogin>nasbndnahsasjbdndhjabsdhbavsd</InfoLogin>
-          <InfoLogin>sbahdjbhasbdhasbdgbajisbdhbsabn</InfoLogin>
-          <InfoLogin>asbdhjbashbashdbsadansdjndsabdh</InfoLogin>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            maxWidth: "280px"
+          }}
+        >
+          <Salutation>O Sapo Não Lava O Pé (O Sapo)</Salutation>
+          <InfoLogin>O sapo não lava o pé</InfoLogin>
+          <InfoLogin>Não lava porque não quer</InfoLogin>
+          <InfoLogin>Ele mora lá na lagoa</InfoLogin>
+          <InfoLogin>Não lava o pé porque não quer</InfoLogin>
         </div>
       </BackContent>
     </>

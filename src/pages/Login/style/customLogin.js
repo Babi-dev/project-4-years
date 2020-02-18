@@ -34,10 +34,9 @@ export const BackContent = styled.section`
 `;
 
 export const Title = styled.span`
-  font-size: 26px;
+  font-size: 30px;
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-
+  font-family: "Raleway", sans-serif;
   color: #ff1443;
   margin-bottom: 20px;
 `;
@@ -46,13 +45,12 @@ export const Salutation = styled.span`
   margin-bottom: 20px;
   font-size: 30px;
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Raleway", sans-serif;
 `;
 
 export const InfoLogin = styled.span`
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
-  font-family: Arial, Helvetica, sans-serif;
-
+  font-family: "Raleway", sans-serif;
   text-align: left;
 `;
