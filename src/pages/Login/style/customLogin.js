@@ -34,7 +34,7 @@ export const BackContent = styled.section`
 `;
 
 export const Title = styled.span`
-  font-size: 30px;
+  font-size: 34px;
   font-weight: bold;
   font-family: "Raleway", sans-serif;
   color: #ff1443;
@@ -43,7 +43,7 @@ export const Title = styled.span`
 
 export const Salutation = styled.span`
   margin-bottom: 20px;
-  font-size: 30px;
+  font-size: 34px;
   font-weight: bold;
   font-family: "Raleway", sans-serif;
 `;

@@ -118,7 +118,7 @@ function Login() {
           style={{
             display: "flex",
             flexDirection: "column",
-            maxWidth: "280px"
+            maxWidth: "320px"
           }}
         >
           <Salutation>O Sapo Não Lava O Pé (O Sapo)</Salutation>
